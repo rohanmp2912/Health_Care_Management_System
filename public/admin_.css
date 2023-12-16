@@ -4,7 +4,9 @@
   --second-text-color: #bbbec5;
   --second-bg-color: #c1efde;
 } */
-
+.row-dyn{
+  margin: 200px;
+}
 
 .primary-text {
     color: #010906;
@@ -94,6 +96,10 @@
     /* height: 50px; */
    
   }
+  .main-card{
+    display: flex;
+    /* margin: 2px; */
+  }
   .navbar{
     background-color: #70cbf0;
     padding-top: 50px;
@@ -101,7 +107,8 @@
   }
   .card-main{
     display: flex;
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-left: 80px;
   } 
   
   .card h2{
@@ -121,21 +128,7 @@
   .btn.btn.btn-primary:hover {
     background-color: #45a049;
   }
-  /* .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-  } */
-  /* .modal fade .modal-dialog .modal-content .modal-dialog modal-dialog-scrollable .btn btn-primary{
-    border-radius: 12px;
-    margin-top: 150px;
-    padding: 40px;
-    border: 2px solid black;
-  } */
-  
+ 
   @media (min-width: 768px) {
     #sidebar-wrapper {
       margin-left: 0;

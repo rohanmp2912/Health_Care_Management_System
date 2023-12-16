@@ -1,0 +1,27 @@
+1. npm init -y
+2. npm  i express ejs socket.io ===>(we can communicatiate easily with another easily using socket)
+3.  nom i uuid   (helps to create the dynamic URLs in different rooms)
+4. npm i --save-dev nodemon
+
+use this "https://peerjs.com/"  to collect the SCRIPT FILE and paste into the rom.js
+
+5.  npm i -g peer   //which will hwlps to maintain the UserID automativally when they joined
+6.  peerjs --port 3001   // make the pperjs to RUN on another port called 3001 which helps to bring thr new user Id new new noe JOINED
+
+
+ONE TERMINAL WE NEED TO RUN THIS
+---------------------------------------------------
+PS C:\Users\rohan\OneDrive\Documents\Pw Practice\video call> npm i -g peer
+
+added 101 packages in 7s
+
+17 packages are looking for funding
+  run `npm fund` for details
+PS C:\Users\rohan\OneDrive\Documents\Pw Practice\video call> peerjs --port 3001
+Started PeerServer on ::, port: 3001, path: /
+Client connected: 9915a8cc-40ec-404b-9609-7961f659a6aa
+Client connected: 27b548ad-6076-4a2b-b530-45ea6640ae95
+
+ANOHER TERMINAL WE NEED TO RUN THIS 
+------------------------------------------------
+nodemon server.js

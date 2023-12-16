@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const ROOM_ID="<%= roomId %>"  //obtaining the room id from the server to the ejs file
+    </script>
+    <script defer src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js" defer></script>  
+     <!-- // which will render all the reuired functionlaitid of th socket to the ejs file bz in our server we made like someting ".io" --> 
+     <script src="/script.js" defer></script>
+
+   <style>
+        #video-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,300px);  
+            grid-auto-rows: 300px;
+            margin: 60px 0 70px 50px;
+            justify-content: space-around;
+            /* it will set the width to the 300px and second line fits the height to 300px */
+        }
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Doctor - Patient Consultancy Room</h1>
+    <div id="video-grid"></div>
+</body>
+</html>

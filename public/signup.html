@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up page</title>
+    <link rel="stylesheet" href="signup.css">
+    
+    <script src="https://kit.fontawesome.com/861c213b64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="namefield">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name" id="add_name">
+                </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="add_email">
+    
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" id="add_password">
+                </div>
+                <p>Forgot password? <a href="#">Click Here</a></p>
+
+                <div class="input-field-2">
+                    
+                    <p>Sign Up As:</p>
+                    
+                <input type="radio"name="Loginas" id="adminRole" value="A">Admin
+            
+                    <input type="radio"name="Loginas" id="doctorRole" value="D">Doctor
+                  
+                    <input type="radio"name="Loginas" id="patientRole" value="P">Patient
+
+                </div>
+
+            </div>
+            
+            <div class="btn-field">
+                <button type="button" id="signupbtn">Sign up</button>
+                
+            </div>
+            <div class="ask">
+                <br>
+                <h5>You have already Signed-Up ? -<a href="login.html">Go for Login</a></h5>
+            </div>
+        </form>
+    </div>
+    </div>
+
+   
+    <script src="signup.js"></script>
+   
+</body>
+</html>

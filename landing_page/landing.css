@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(237, 168, 231);
+    background-color: #70cbf0; 
 }
 .main{
     width: 100%;
@@ -174,7 +174,7 @@ font-size: 19px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),
     0 10px 10px rgba(0,0,0,0.25);
     transition: .4s;
-    background:rgb(227, 220, 220)
+    background-color: #70cbf0; 
 
 }
 
@@ -280,3 +280,31 @@ button{
     overflow: auto; /* Add overflow property to enable scrolling if needed */
    
   }
+
+  /* footer.css */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-info {
+    margin-top: 10px;
+    
+}
+.new{
+    background-color: #333;
+    color: aqua;
+}

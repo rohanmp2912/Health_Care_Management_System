@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title -->
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-25">
+                <label for="dept">Department</label>
+            </div>
+            <div class="col-75">
+                <input type="radio" name="department" id="Psychiatric" value="1">Psychiatric
+                <br> <input type="radio" name="department" id="Gastroentterology" value="2">Gastroentterology
+                <br> <input type="radio" name="department" id="Orthopedic" value="3">Orthopedic
+                <br> <input type="radio" name="department" id="Dermatology" value="4">Dermatology
+                <br> <input type="radio" name="department" id="Cardiology" value="5">Cardiology
+                <br><input type="radio" name="department" id="Neurology" value="6">Neurology
+            </div>
+        </div>
+        
+        <div class="row-btn">
+            <input type="submit" value="View Doctors" id="find_doctor">
+        </div>
+
+        <div class="row-dyn">
+            <table id="table">
+                <thead>
+                    <th>Doctor Name</th>
+                    <th>Qualification</th>
+                    <th>Place</th>
+                    <th>Contact No.</th>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically filled here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="dept">Doctor</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="doct" name="dept" placeholder="Doctor">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">Overview of Sickness</label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+        </div>
+        
+        <div class="row">
+            <input type="submit" value="Submit" id="app_submit">
+        </div>
+    </div>
+    
+    <script src="appointment.js"></script>
+</body>
+</html>

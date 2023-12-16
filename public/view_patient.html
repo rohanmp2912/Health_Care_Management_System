@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="view_patient.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Details</h1>
+        <button id="view-app">View Details</button>
+
+        <div class="row-dyn">
+            <table id="table">
+                <thead>
+                    <th>Appointment ID</th>
+                    <th>Patient Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Place</th>
+                    <th>Phone No.</th>
+                    <th>Date and Time</th>
+                    <th>Cause</th>
+                    <th>Prescription</th>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically filled here -->
+                </tbody>
+            </table>
+        </div>
+        <button onclick="window.location.href='doctor_.html'">Back</button>
+    </div>
+
+    <script src="doctor_dash.js"></script>
+</body>
+</html>

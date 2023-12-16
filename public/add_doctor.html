@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Doctor</title>
+    <link rel="stylesheet" href="add_doctor.css" />
+</head>
+<body>
+ 
+    <div class="container">
+        
+        <div class="left-section">
+            <label for="doctorName">Name:</label>
+            <input type="text" id="doctorName" name="doctorName" required>
+
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="right-section">
+           
+
+            <span class="department-label">Select the Department :</span>
+            <br>
+            <label class="department-radio">Psychiatric<input type="radio" name="department" id="Psychiatric" value="1" required></label>
+            <label class="department-radio">Gastroenterology<input type="radio" name="department" id="Gastroenterology" value="2" required></label>
+            <label class="department-radio">Orthopedic<input type="radio" name="department" id="Orthopedic" value="3" required></label>
+            <label class="department-radio">Dermatology<input type="radio" name="department" id="Dermatology" value="4" required></label>
+            <label class="department-radio">Cardiology<input type="radio" name="department" id="Cardiology" value="5" required></label>
+            <label class="department-radio">Neurology<input type="radio" name="department" id="Neurology" value="6" required></label>
+        </div>
+
+        <div class="center-section">
+            <button id="add_doct">Add Doctor</button>
+        </div>
+    </div>
+<script src="add_doctor.js"></script>
+    
+</body>
+</html>

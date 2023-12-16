@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Redirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 360px;
+            width: 720px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-around; */
+            margin-top: 20px;
+            /* align-items: center; */
+        }
+
+        .redirect-button {
+            padding: 10px 10px;
+            margin: 10px 40px 40px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            background-color: #3498db;
+            color: #fff;
+            transition: background-color 0.3s;
+            width: 180px;
+            
+        }
+
+        .redirect-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <h2>Are you a new patient?</h2>
+
+        <div class="button-container">
+            <button class="redirect-button" onclick="redirectToPage('patient.html')">Enter Your Details</button>
+            
+        </div>
+        <h2>Have you already taken an appointment before?</h2>
+        <div class="button-container">
+            
+           
+            <button class="redirect-button" onclick="redirectToPage('appform.html')">Get Appointment</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
