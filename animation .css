@@ -1,0 +1,65 @@
+div{
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    position: relative;
+    /* animation-name: colorchange;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-timing-function: ease-out;
+    animation-fill-mode:both;      */
+    /* it overrides the animation content like initially what we set that is gets new thing
+    forward----holds the last color  given during  at 100% 
+    backwards-----holds the initial color given in originally  at 0%
+    and also we have BOTH it takes both property of it !!*/
+    
+    animation: colorchange 8s ease 3s infinite reverse none;
+}
+/* #ease{
+    animation-timing-function: ease;
+}
+#ease-in{
+    animation-timing-function: ease-in;
+}
+#ease-out{
+    animation-timing-function: ease-out;
+}
+#linear{
+    animation-timing-function: linear;
+} */
+@keyframes colorchange {
+    0%
+    {
+        background-color: green;
+        top: 0px;
+        left: 0px;
+    }
+    25%
+    { 
+        background-color: yellow;
+        top: 0px;
+        left: 400px;
+    }
+    50%
+    {
+background-color: blue;
+         left: 400px;
+         top: 400px;
+
+    }
+    75%
+    {
+        background-color: brown;
+      left: 0px;
+    top: 400px;
+    }
+    100%
+    {
+background-color: rgb(7, 11, 10);
+left: 0px;
+top: 0px;
+    }
+    
+}
